@@ -65,7 +65,7 @@ class About extends React.Component {
               <img src={user.avatar_url} alt='Avatar' className={styles.avatar} />
             </div>
             <div className={styles.points}>
-              <p className={styles.desctription}>Hello! My name is Evelina</p>
+              <p className={styles.description}>Hello! My name is Evelina</p>
               <p className={styles.indification}>GitHub ID: {user.id}</p>
               <p className={styles.login}>GitHub login: {user.login}</p>
               <p className={styles.url}>GitHub url: <a href={user.html_url}>{user.html_url}</a></p>
@@ -77,7 +77,8 @@ class About extends React.Component {
             </p>
             <div className={styles.links}>
               {repoList.map(repo => (<div className={styles.item} key={repo.name}>
-                <a href={repo.name} className={styles.naming}>{repo.name}</a>
+                <a href={repo.html_url} className={styles.naming}>{repo.name}</a>
+                <p className={styles.descr}>{repo.description}</p>
               </div>))}
             </div>
           </div>

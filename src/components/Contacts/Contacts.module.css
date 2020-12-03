@@ -12,23 +12,54 @@
   box-shadow: 8px 8px 0 0 #678b78;
 }
 
-.icon {
-  display: block;
-  width: 15%;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.link {
-  font: 20px/20px Georgia, arial, helvetica, sans-serif;
-  color: #000;
-  text-decoration: none;
+.item {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 30px;
+  transition: .5s ease;
 }
 
 .text {
-  
+  transition: .5s ease;
+}
+
+.text:hover {
+  color: #678b78;
+}
+
+.link {
+  font: 25px/25px Georgia, arial, helvetica, sans-serif;
+  color: #000;
+  text-decoration: none;
+  align-self: center;
+  transition: .5s ease;
+}
+
+.link:hover {
+  color: #678b78;
+}
+
+.text {
+  font: 25px/25px Georgia, arial, helvetica, sans-serif;
 }
 
 .picture {
-  
+  width: 80px;
+  height: 80px;
+  padding-right: 30px;
+}
+
+@media (max-width: 745px) {
+  .picture {
+    width: 50px;
+    height: 50px;
+  }
+
+  .link {
+    font: 18px/18px Georgia, arial, helvetica, sans-serif;
+  }
+
+  .text {
+    font: 18px/18px Georgia, arial, helvetica, sans-serif;
+  }
 }

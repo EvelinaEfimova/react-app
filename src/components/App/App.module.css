@@ -64,7 +64,7 @@ body {
 .footer {
   margin: auto;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
   width: 30%;
   border-radius: 10px;
   background-color: #dae7dc;
@@ -78,5 +78,49 @@ body {
 }
 
 .picture {
-  
+  margin-top: -20px;
+  width: 200px;
+  height: 50px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 725px) {
+  .text {
+    font: 22px/22px Georgia, arial, helvetica, sans-serif;
+  }
+
+  .picture {
+    margin-top: -15px;
+    width: 180px;
+    height: 50px;
+  }
+
+  .links {
+    margin-right: 30px;
+  }
+
+  .item {
+    font: 38px/48px Georgia, arial, helvetica, sans-serif;
+  }
+}
+
+@media (max-width: 642px) {
+  .text {
+    font: 21px/21px Georgia, arial, helvetica, sans-serif;
+  }
+
+  .picture {
+    width: 140px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 562px) {
+  .links {
+    margin-right: 20px;
+  }
+
+  .item {
+    font: 35px/45px Georgia, arial, helvetica, sans-serif;
+  }
 }

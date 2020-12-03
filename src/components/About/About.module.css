@@ -16,6 +16,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  align-self: center;
   width: 100px;
   height: 100px;
 }
@@ -41,20 +42,27 @@
   border-radius: 50%;
 }
 
-.desctription, .indification,
+.description, .indification,
 .login, .url {
   font: 21px/25px Georgia, arial, helvetica, sans-serif;
   padding-left: 30px;
 }
 
 .heading {
+  text-align: center;
   font: 30px/30px Georgia, arial, helvetica, sans-serif;
+  font-weight: 700;
 }
 
 .links {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.descr {
+  font-style: italic;
+  margin-left: 15px;
+  align-self: flex-end;
 }
 
 .naming {
@@ -64,6 +72,7 @@
 }
 
 .item {
+  display: flex;
   margin-bottom: 30px;
   border-radius: 10px;
   background-color: #f2f4ff;
@@ -81,4 +90,95 @@
 .error_status {
   font: 25px/25px Georgia, arial, helvetica, sans-serif;
   color: red;
+}
+
+@media (max-width: 1250px) {
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .description, .indification,
+  .login, .url {
+    font: 18px/22px Georgia, arial, helvetica, sans-serif;
+  }
+
+  .heading {
+    font: 30px/30px Georgia, arial, helvetica, sans-serif;
+  }  
+
+  .naming {
+    font: 22px/22px Georgia, arial, helvetica, sans-serif;
+  }
+
+  .error,
+  .error_text,
+  .error_status {
+    font: 22px/22px Georgia, arial, helvetica, sans-serif;
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+    width: 70%;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+    margin-left: 30px;
+  }
+
+  .points {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    margin-bottom: 15px;
+  }
+
+  .description, .indification,
+  .login, .url {
+    font: 18px/18px Georgia, arial, helvetica, sans-serif;
+  }
+
+  .heading {
+    font: 25px/25px Georgia, arial, helvetica, sans-serif;
+  }
+
+  .error,
+  .error_text,
+  .error_status {
+    font: 22px/22px Georgia, arial, helvetica, sans-serif;
+  }
+}
+
+@media (max-width: 869px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 780px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 563px) {
+  .main {
+    display: block;
+    text-align: center;
+  }
+
+  .photo {
+    margin-left: -20px;
+  }
+
+  .description, .indification,
+  .login, .url {
+    padding-left: 0;
+    margin-top: 10px;
+  }
 }

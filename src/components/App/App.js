@@ -4,7 +4,7 @@ import Todo from '../Todo/Todo';
 import About from '../About/About';
 import Contacts from '../Contacts/Contacts';
 import styles from './App.module.css';
-import '../Images/logo.png';
+import logo from '../Images/logo.png';
 
 const App = () => {
   return (
@@ -35,7 +35,7 @@ const App = () => {
       </div>
       <div className={styles.footer}>
         <p className={styles.text}>created in</p>
-        <img src={require('../Images/logo.png')} alt='school' className={styles.picture} />
+        <img src={logo} alt='school' className={styles.picture} />
       </div>
     </Router>
   )
